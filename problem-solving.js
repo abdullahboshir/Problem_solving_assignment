@@ -78,3 +78,61 @@ const sumEven = (arr) =>
 const isLeapYear = (year) => {
   return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 };
+
+
+
+
+
+// --------------------Task-8---------------
+
+const nums = [1, 2, 2, 3, 4, 4, 5];
+
+
+
+const uniqueNumbers = (arr) => [...new Set(arr)];
+
+
+
+
+
+
+
+
+
+// --------------------Task-9---------------
+
+const values = [12, 5, 78, 22, 9];
+
+const findMax = (arr) => Math.max(...arr);
+
+
+
+
+
+
+
+// --------------------Task-10---------------
+
+const students = [
+
+  { name: "Amina", grades: [90, 80, 85] },
+
+  { name: "Rahim", grades: [70, 60, 75] },
+
+  { name: "Tania", grades: [95, 92, 90] }
+
+];
+
+
+
+const sortByAverage = (arr) =>
+
+  arr.sort((a, b) => {
+
+    const avgA = a.grades.reduce((s, n) => s + n, 0) / a.grades.length;
+
+    const avgB = b.grades.reduce((s, n) => s + n, 0) / b.grades.length;
+
+    return avgB - avgA;
+
+  });
