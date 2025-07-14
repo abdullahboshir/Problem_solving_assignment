@@ -47,3 +47,34 @@ const cars = [
 const sortCarsByYear = (arr) => arr.sort((a, b) => a.year - b.year);
 
 
+
+
+
+// --------------------Task-5---------------
+const persons = [
+  { name: "Ali", age: 24 },
+  { name: "Nora", age: 28 },
+  { name: "Jamal", age: 30 }
+];
+
+const updateAge = (arr, personName, newAge) => {
+  const person = arr.find(p => p.name === personName);
+  if (person) person.age = newAge;
+  return arr;
+};
+
+
+
+// --------------------Task-6---------------
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const sumEven = (arr) =>
+  arr.reduce((sum, num) => num % 2 === 0 ? sum + num : sum, 0);
+
+
+
+
+// --------------------Task-7---------------
+const isLeapYear = (year) => {
+  return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+};
