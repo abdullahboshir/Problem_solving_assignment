@@ -24,3 +24,26 @@ const books = [
 const getBookTitles = (arr) => arr.map(book => book.title);
 
 
+
+
+
+
+// --------------------Task-3---------------
+const square = x => x * x;
+const double = x => x * 2;
+const addFive = x => x + 5;
+
+const composed = (x) => addFive(double(square(x)));
+
+
+
+// --------------------Task-4---------------
+const cars = [
+  { make: "Toyota", model: "Corolla", year: 2010 },
+  { make: "Honda", model: "Civic", year: 2008 },
+  { make: "Ford", model: "Focus", year: 2015 }
+];
+
+const sortCarsByYear = (arr) => arr.sort((a, b) => a.year - b.year);
+
+
